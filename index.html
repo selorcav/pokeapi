@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeApi</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container"></main>
+
+      <article class="card">
+        <div id="cardHeader" class="card__header">
+          <div class="card__header__details">
+            <h1 class="card__header__details-name" id="name">Bulbasaur</h1>
+            <h3 class="poke-id" id="num">#001</h3>
+          </div>
+        </div>
+
+        <div class="card__body">
+          <img
+            class="card__body__img"
+            src="./assets/img/1.png"
+            alt="Foto Pokemon"
+            id="img"
+          />
+          <div class="card__body__info">
+            <div class="card__body__types">
+              <span class="card__body__types-1">
+                <p class="poke-type" id="type">grass</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__data">
+          <h2 class="card__data__title">Pokédex Data</h2>
+          <div class="card__data__info">
+            <p class="card__data__info-title">
+              Ability: &nbsp;&nbsp;<span
+                class="card__data__info-d"
+                style="text-transform: capitalize"
+                id="ability"
+                >5</span
+              >
+            </p>
+            <p class="card__data__info-title">
+              Height: &nbsp;&nbsp;<span class="card__data__info-d" id="height">5</span>
+            </p>
+            <p class="card__data__info-title">
+              Weight: &nbsp;<span class="card__data__info-d" id="weight">5</span>
+            </p>
+
+            <h2 class="card__data__title">Stats</h2>
+
+            <div class="card-footer">
+              <div class="card-footer__stats">
+                <p class="card-footer__stats-number" id="attack">80K</p>
+                <p class="card-footer__stats-desc">Attack</p>
+              </div>
+              <div class="card-footer__stats">
+                <p class="card-footer__stats-number" id="experience">803K</p>
+                <p class="card-footer__stats-desc">Experience</p>
+              </div>
+              <div class="card-footer__stats">
+                <p class="card-footer__stats-number" id="defense">1.4K</p>
+                <p class="card-footer__stats-desc">Defense</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
