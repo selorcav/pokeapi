@@ -22,68 +22,110 @@ $.getJSON(pokeapiUrl).done(function (data) {
 
     type = data.types[0].type.name
 
-    const elem = document.getElementById('cardHeader');
+    const cardHeader = document.getElementById('cardHeader');
+    const cardBody = document.getElementById('cardBody');
+    const cardDataTitle = document.getElementById('cardDataTitle');
 
     switch (type) {
         case "normal":
-            elem.style.backgroundColor = '#c7ccce'
+            cardHeader.style.backgroundColor = '#c7ccce'
+            cardBody.style.backgroundColor = '#c7ccce'
+            cardDataTitle.style.color = '#c7ccce'
             break;
         case "poison":
-            elem.style.backgroundColor = '#b090c1'
+            cardHeader.style.backgroundColor = '#b090c1'
+            cardBody.style.backgroundColor = '#b090c1'
+            cardDataTitle.style.color = '#b090c1'
             break;
         case "psychic":
-            elem.style.backgroundColor = '#db75ae'
+            cardHeader.style.backgroundColor = '#db75ae'
+            cardBody.style.backgroundColor = '#db75ae'
+            cardDataTitle.style.color = '#db75ae'
             break;
         case "grass":
-            elem.style.backgroundColor = '#8bbe8a'
+            cardHeader.style.backgroundColor = '#8bbe8a'
+            cardBody.style.backgroundColor = '#8bbe8a'
+            cardDataTitle.style.color = '#8bbe8a'
             break;
         case "ground":
-            elem.style.backgroundColor = '#c4943f'
+            cardHeader.style.backgroundColor = '#c4943f'
+            cardBody.style.backgroundColor = '#c4943f'
+            cardDataTitle.style.color = '#c4943f'
             break;
         case "ice":
-            elem.style.backgroundColor = '#62cdc1'
+            cardHeader.style.backgroundColor = '#62cdc1'
+            cardBody.style.backgroundColor = '#62cdc1'
+            cardDataTitle.style.color = '#62cdc1'
             break;
         case "fire":
-            elem.style.backgroundColor = '#ffa756'
+            cardHeader.style.backgroundColor = '#ffa756'
+            cardBody.style.backgroundColor = '#ffa756'
+            cardDataTitle.style.color = '#ffa756'
             break;
         case "rock":
-            elem.style.backgroundColor = '#bca584'
+            cardHeader.style.backgroundColor = '#bca584'
+            cardBody.style.backgroundColor = '#bca584'
+            cardDataTitle.style.color = '#bca584'
             break;
         case "dragon":
-            elem.style.backgroundColor = '#9a9dcb'
+            cardHeader.style.backgroundColor = '#9a9dcb'
+            cardBody.style.backgroundColor = '#9a9dcb'
+            cardDataTitle.style.color = '#9a9dcb'
             break;
         case "water":
-            elem.style.backgroundColor = '#58abf6'
+            cardHeader.style.backgroundColor = '#58abf6'
+            cardBody.style.backgroundColor = '#58abf6'
+            cardDataTitle.style.color = '#58abf6'
             break;
         case "bug":
-            elem.style.backgroundColor = '#8cb331'
+            cardHeader.style.backgroundColor = '#8cb331'
+            cardBody.style.backgroundColor = '#8cb331'
+            cardDataTitle.style.color = '#8cb331'
             break;
         case "dark":
-            elem.style.backgroundColor = '#5a595d'
+            cardHeader.style.backgroundColor = '#5a595d'
+            cardBody.style.backgroundColor = '#5a595d'
+            cardDataTitle.style.color = '#5a595d'
             break;
         case "fighting":
-            elem.style.backgroundColor = '#eb4971'
+            cardHeader.style.backgroundColor = '#eb4971'
+            cardBody.style.backgroundColor = '#eb4971'
+            cardDataTitle.style.color = '#eb4971'
             break;
         case "fire":
-            elem.style.backgroundColor = '#ffa756'
+            cardHeader.style.backgroundColor = '#ffa756'
+            cardBody.style.backgroundColor = '#ffa756'
+            cardDataTitle.style.color = '#ffa756'
             break;
         case "ghost":
-            elem.style.backgroundColor = '#636298'
+            cardHeader.style.backgroundColor = '#636298'
+            cardBody.style.backgroundColor = '#636298'
+            cardDataTitle.style.color = '#636298'
             break;
         case "steel":
-            elem.style.backgroundColor = '#447f9c'
+            cardHeader.style.backgroundColor = '#447f9c'
+            cardBody.style.backgroundColor = '#447f9c'
+            cardDataTitle.style.color = '#447f9c'
             break;
         case "flying":
-            elem.style.backgroundColor = '#b5bbd3'
+            cardHeader.style.backgroundColor = '#b5bbd3'
+            cardBody.style.backgroundColor = '#b5bbd3'
+            cardDataTitle.style.color = '#b5bbd3'
             break;
         case "electric":
-            elem.style.backgroundColor = '#f2cb55'
+            cardHeader.style.backgroundColor = '#f2cb55'
+            cardBody.style.backgroundColor = '#f2cb55'
+            cardDataTitle.style.color = '#f2cb55'
             break;
         case "fairy":
-            elem.style.backgroundColor = '#eab8cf'
+            cardHeader.style.backgroundColor = '#eab8cf'
+            cardBody.style.backgroundColor = '#eab8cf'
+            cardDataTitle.style.color = '#eab8cf'
             break;
         default:
-            elem.style.backgroundColor = '#ebedf5'
+            cardHeader.style.backgroundColor = '#ebedf5'
+            cardBody.style.backgroundColor = '#ebedf5'
+            cardBody.style.backgroundColor = '#ebedf5'
             break;
     }
 });
